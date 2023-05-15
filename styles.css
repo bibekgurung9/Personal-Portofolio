@@ -1,8 +1,33 @@
+/* Styling for responsive design */
+@media only screen and (max-width: 768px) {
+  .container {
+  padding: 0;
+  }
+  
+  .navbar-nav {
+  margin-right: 0;
+  }
+  
+  .project-tile {
+  flex-basis: 90%;
+  }
+  
+  #links {
+  flex-direction: column;
+  }
+  
+  .social-links {
+  margin: 10px 0;
+  }
+  }
+  
 *{
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 1.3rem;
+  line-height: 1.4;
+  box-sizing: inherit;
 }
 
 :root{
@@ -11,15 +36,41 @@
   --color-grey: #333;
 }
 
+body{
+  display: block;
+}
 /*Styling for the NavBar*/
+.fixed-navabar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
 .container{
   background-color: #333;
   padding: 5px;
+  text-transform: capitalize;
 }
-
 .navbar-brand{
   display: inline-block;
+  font-size: 24px;
 }
+.navbar-nav {
+  margin-right: -16px;
+}
+.nav-link {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+.nav-link:hover {
+  color: #007bff;
+}
+
 li{
   display: inline-block;
 }
@@ -30,43 +81,88 @@ a{
 /*Stlying for "Welcome Section"*/
 #welcome-section{
   justify-content: center;
-  padding: 100px;
+  padding: 100px 0;
   background-color: limegreen;
 }
 
 #welcome-section h1{
   text-align: center;
   font-size: 96px;
+  margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .hero_title{
   text-align: center;
-  font-size: 48px;
+ font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem;
 }
 .hero_desc{
   text-align: center;
-  font-size: 24px;
-  font-weight: 600;
-
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 4rem;
 }
+
 .works{
   padding-top: 15px;
   text-align: center;
-  font-size: 16px;
-
+  font-size: 16px; 
 }
+
 /*Styling for Projects Section*/
 #projects{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: aqua;
 }
-
+.works {
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
 .project-tile{
-  padding: 20px;
+  flex-basis: 600px;
+  margin: 2rem auto;
+  box-shadow: 20px 5px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  transition: all 0.3s ease-in-out;
 }
-
+.project-tile:hover {
+  transform: scale(1.05);
+}
+.project-tile img {
+  border-radius: 5px;
+}
 
 /*Styling for Social Links Section*/
 #links{
-  padding: 4px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding-bottom: 20px;
 }
+.social-links {
+  display: inline-block;
+  border-radius: 5% 5%;
+  background-color: limegreen;
+  color: var(--color-secondary);
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 10px;
+}
+.social-links:hover {
+  background-color: #0062cc;
+}
+
