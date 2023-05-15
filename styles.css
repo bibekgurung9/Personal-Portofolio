@@ -1,39 +1,72 @@
-@media width(500px){
-  
-}
-:root{
-  font-family: Cursive;
-  text-align: center;
-}
-header{
-  position: fixed;
-}
-/* hero background image */
-.bgimage {
-    height:100vh;
-    background: url('https://images.squarespace-cdn.com/content/v1/5a3bb03b4c326d76de73ddaa/eb8af93d-6f61-41d1-95c4-9aee1ac9026c/The+Common+Wanderer-9566.jpg');
-    background-size:cover;
-    position:relative;
-}
-/* text css above hero image*/
-.hero_title {
-    font-size: 4.5rem;
-}
-.hero_desc {
-    font-size: 2rem;
-}
-.hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: black;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
-}
-#projects{
-  width: 50%;
-  padding: 3px;  
-  border: 3px solid #fff;
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }
 
+:root{
+  --color-primary: #ffffff;
+  --color-secondary: #000000;
+  --color-grey: #333;
+}
+
+/*Styling for the NavBar*/
+.container{
+  background-color: #333;
+  padding: 5px;
+}
+
+.navbar-brand{
+  display: inline-block;
+}
+li{
+  display: inline-block;
+}
+a{
+  text-decoration: none;
+}
+
+/*Stlying for "Welcome Section"*/
+#welcome-section{
+  justify-content: center;
+  padding: 100px;
+  background-color: limegreen;
+}
+
+#welcome-section h1{
+  text-align: center;
+  font-size: 96px;
+}
+
+.hero_title{
+  text-align: center;
+  font-size: 48px;
+}
+.hero_desc{
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+
+}
+.works{
+  padding-top: 15px;
+  text-align: center;
+  font-size: 16px;
+
+}
+/*Styling for Projects Section*/
+#projects{
+  display: flex;
+}
+
+.project-tile{
+  padding: 20px;
+}
+
+
+/*Styling for Social Links Section*/
+#links{
+  padding: 4px;
+  text-align: center;
+}
