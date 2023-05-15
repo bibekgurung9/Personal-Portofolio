@@ -20,7 +20,7 @@
   margin: 10px 0;
   }
   }
-  
+
 *{
   margin: 0;
   padding: 0;
@@ -77,7 +77,9 @@ li{
 a{
   text-decoration: none;
 }
-
+#links {
+  padding: 20px;
+}
 /*Stlying for "Welcome Section"*/
 #welcome-section{
   justify-content: center;
@@ -90,6 +92,7 @@ a{
   font-size: 96px;
   margin-bottom: 20px;
   font-weight: bold;
+  color: var(--color-primary);
 }
 
 .hero_title{
@@ -137,6 +140,10 @@ a{
   max-width: 800px;
   transition: all 0.3s ease-in-out;
 }
+.project-tile img {
+  display: block;
+  margin: auto;
+}
 .project-tile:hover {
   transform: scale(1.05);
 }
@@ -157,12 +164,26 @@ a{
   border-radius: 5% 5%;
   background-color: limegreen;
   color: var(--color-secondary);
-  font-size: 24px;
+  font-size: 1.2rem;
   text-align: center;
   line-height: 50px;
   margin: 0 10px;
+  padding: 10px;
+  transition: background-color 0.5s ease;
 }
 .social-links:hover {
   background-color: #0062cc;
+  color: var(--color-primary);
 }
 
+/* Styling for Footer Section */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  }
+  footer p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  }
