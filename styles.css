@@ -21,6 +21,14 @@
   }
   }
 
+  @media only screen and (min-width: 768px) {
+    /* Styles for tablets and desktops */
+  }
+  
+  @media only screen and (min-width: 992px) {
+    /* Styles for large desktops */
+  }
+
 *{
   margin: 0;
   padding: 0;
@@ -34,6 +42,8 @@
   --color-primary: #ffffff;
   --color-secondary: #000000;
   --color-grey: #333;
+  --color-limegreen: limegreen;
+  --color-aqua: aqua;
 }
 
 body{
@@ -45,12 +55,12 @@ body{
   top: 0;
   left: 0;
   right: 0;
-  background-color: #fff;
+  background-color: var(--color-primary);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   z-index: 999;
 }
 .container{
-  background-color: #333;
+  background-color: var(--color-grey);
   padding: 5px;
   text-transform: capitalize;
 }
@@ -84,7 +94,7 @@ a{
 #welcome-section{
   justify-content: center;
   padding: 100px 0;
-  background-color: limegreen;
+  background-color: var(--color-limegreen);
 }
 
 #welcome-section h1{
@@ -150,6 +160,9 @@ a{
 .project-tile img {
   border-radius: 5px;
 }
+img:hover {
+  cursor: pointer; 
+}
 
 /*Styling for Social Links Section*/
 #links{
@@ -162,7 +175,7 @@ a{
 .social-links {
   display: inline-block;
   border-radius: 5% 5%;
-  background-color: limegreen;
+  background-color: var(--color-limegreen);
   color: var(--color-secondary);
   font-size: 1.2rem;
   text-align: center;
@@ -179,7 +192,7 @@ a{
 /* Styling for Footer Section */
 footer {
   background-color: #333;
-  color: #fff;
+  color: var(--color-primary);
   padding: 20px 0;
   text-align: center;
   }
