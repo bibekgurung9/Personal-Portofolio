@@ -1,2 +1,2 @@
 # Personal-Portofolio
- A Personal Portofolio Website made with HTML and CSS
+ A Simple Landscape Photography Portofolio Page made with HTML and CSS
