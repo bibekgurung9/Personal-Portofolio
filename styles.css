@@ -200,3 +200,33 @@ footer {
   font-size: 1.2rem;
   margin-bottom: 10px;
   }
+
+  /*Anything you want to say to me?*/
+  .hello{
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  input[type="area"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 50px;
+  }
+  input[type="submit"] {
+    background-color: var(--color-limegreen);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
